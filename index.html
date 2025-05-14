@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Paradise</title>
+    <!-- Fav Icon Link  -->
+    <link rel="shortcut icon" href="./icons/food.png" type="image/x-icon" />
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- External CSS (Bootstrap) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous" />
+    <!-- External JS (Bootstrap) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+      defer></script>
+    <!-- External Icon (Bootstrap) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Google Font (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <!-- Font-awesome cdn Link   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Script  -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid bg-info">
+      <!-- Navigation Start  -->
+      <nav class="navbar bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand"
+            ><img src="./icons/kitchen.png" alt="" class="ws" />
+            <span class="text-danger fw-bolder">Paradise</span></a
+          >
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+      <!-- Navigation End  -->
+      <!-- Manager Side Start  -->
+      <div class="bg row justify-content-between">
+        <h1 class="fsx ms-auto text-center text-success-emphasis pt-4">
+          Hotel Paradise
+        </h1>
+        <!-- Left  -->
+        <div
+          class="col-lg-8 col-sm-12 d-flex mx-auto align-items-start justify-content-between p-5">
+          <div class="bg-warning bg-opacity-50 mt-5">
+            <h1 class="text-center py-5">Customer Order Form</h1>
+            <form action="#" class="mb-5 px-5">
+              <!-- input 01  -->
+              <div
+                class="d-flex align-items-center justify-content-start px-5 my-2">
+                <label for="name" class="fs-4 w-25">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="w-75 fs-6"
+                  placeholder="Enter your Name" />
+              </div>
+              <!-- input 02  -->
+              <div
+                class="d-flex align-items-center justify-content-start px-5 my-2">
+                <label for="name" class="fs-4 w-25">Food Type:</label>
+                <input
+                  type="text"
+                  id="food"
+                  class="w-75 fs-6"
+                  placeholder="Choose Your Foods" />
+              </div>
+              <!-- input 03  -->
+              <div
+                class="d-flex align-items-center justify-content-start px-5 my-2">
+                <label for="name" class="fs-4 w-25">Price</label>
+                <input
+                  type="number"
+                  id="price"
+                  class="w-75 fs-6"
+                  placeholder=" $" />
+              </div>
+              <button
+                id="btn"
+                type="button"
+                class="btn btn-success ms-3 fs-4 my-3">
+                Order Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Right  -->
+        <div
+          class="mt-5 flex-column mx-auto align-items-center justify-content-start col-md-12 col-lg-4">
+          <h1 class="fs-1 text-light p-5">Manager</h1>
+          <img src="./icons/Manager.png " alt="" class="w-100" />
+        </div>
+      </div>
+      <!-- Manager Side End  -->
+      <!-- Food Control Side Start  -->
+      <div class="row justify-content-between align-items-start">
+        <!-- Waiter  -->
+        <div
+          class="col-lg-6 col-sm-6 my-5 d-flex mx-auto align-items-sm-start justify-content-start row">
+          <div
+            class="d-flex flex-column mx-auto align-items-center justify-content-start col-lg-6">
+            <h1 class="">Waiter</h1>
+            <img src="./icons/waiter.png" alt="" class="w-50" />
+          </div>
+          <div class="col-lg-6 bg-dark text-white my-4 p-4">
+            <h2 class="text-center fs-4">Customer Order Details</h2>
+
+            <div class="p-3">
+              <h4 class="fs-5 my-2">Order Id : <span class="">01</span></h4>
+              <h4 class="fs-5 my-2">Name : <span class="">Fazle</span></h4>
+              <h4 class="fs-5 my-2">Food Type: <span class="">01</span></h4>
+              <h4 class="fs-5 my-2">Price : <span class="">01</span></h4>
+            </div>
+          </div>
+        </div>
+        <!-- kitchen Shep -->
+        <div
+          class="col-lg-6 col-sm-6 my-5 d-flex mx-auto align-items-start justify-content-start row">
+          <div
+            class="d-flex flex-column mx-auto align-items-center justify-content-start col-lg-6">
+            <h1 class="">kitchen Room</h1>
+            <img src="./icons/kitchen.png" alt="" class="w-50" />
+          </div>
+
+          <div class="col-lg-6 bg-dark text-white pt-4 my-3">
+            <h2 class="text-center fs-4">Customer Order Details</h2>
+
+            <div class="p-3">
+              <h4 class="fs-5 my-2">Order Id : <span class="">01</span></h4>
+              <h4 class="fs-5 my-2">Name : <span class="">Fazle</span></h4>
+              <h4 class="fs-5 my-2">Food Type: <span class="">01</span></h4>
+              <h4 class="fs-5 my-2">Price : <span class="">01</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Food Control Side End  -->
+      <!-- Process order Start  -->
+
+      <div
+        class="row gap-1 my-5 mx-auto justify-content-between align-items-center">
+        <!-- Processing ....  -->
+        <div class="col-lg-5 bg-danger text-white my-3 p-4">
+          <h2 class="text-center fs-4">Customer Order Processing ....</h2>
+          <div class="">
+            <h4 class="fs-5">Order Id : <span class="">01</span></h4>
+            <h4 class="fs-5">Name : <span class="">Fazle</span></h4>
+            <h4 class="fs-5">Food Type: <span class="">01</span></h4>
+            <h4 class="fs-5">Price : <span class="">01</span></h4>
+          </div>
+        </div>
+        <!-- Process Complete ....  -->
+        <div class="col-lg-5 bg-success text-white my-3 p-4">
+          <h2 class="text-center fs-4">Customer Order Process Complete</h2>
+          <div class="">
+            <h4 class="fs-5">Order Id : <span class="">01</span></h4>
+            <h4 class="fs-5">Name : <span class="">Fazle</span></h4>
+            <h4 class="fs-5">Food Type: <span class="">01</span></h4>
+            <h4 class="fs-5">Price : <span class="">01</span></h4>
+          </div>
+        </div>
+      </div>
+      <!--  Process order End  -->
+      <!-- Customer Top Side Start  -->
+      <div class="row justify-content-between align-items-start gap-1 my-5">
+        <!-- customer-01 Order -->
+        <div
+          class="col-lg-5 col-sm-6 my-5 d-flex mx-auto align-items-sm-start justify-content-start row bg-primary p-5">
+          <div
+            class="d-flex flex-column mx-auto align-items-center justify-content-start col-lg-6">
+            <h1 class="">Customer Table 01</h1>
+            <img src="./icons/customer.png" alt="" class="w-75" />
+          </div>
+          <div class="col-lg-6">
+            <img src="./icons/food.png" alt="" class="w-75" />
+            <h2 class="">c-1 Order Complete</h2>
+          </div>
+          <button type="button" class="btn btn-light mt-2">Food Review:<input type="text" class="ms-1"  placeholder="Comments"></button>
+        </div>
+        <!-- customer-02 Order -->
+        <div
+          class="col-lg-5 col-sm-6 my-5 d-flex mx-auto align-items-sm-start justify-content-start row bg-primary p-5">
+          <div class="lft col-lg-6">
+            <img src="./icons/food.png" alt="" class="w-75" />
+            <h2 class="">c-2 Order Complete</h2>
+          </div>
+
+          <div
+            class="d-flex flex-column mx-auto align-items-center justify-content-start col-lg-6">
+            <h1 class="">Customer Table 02</h1>
+            <img src="./icons/customer.png" alt="" class="cs w-75" />
+          </div>
+          <button type="button" class="btn btn-light mt-2">Food Review:<input type="text" class="ms-1"  placeholder="Comments"></button>
+        </div>
+      </div>
+      <!--  Customer Top Side End  -->
+      <!-- Customer bottom Side Start  -->
+      <div class="row justify-content-between align-items-start gap-1 my-5">
+        <!-- customer-03 Order -->
+        <div
+          class="col-lg-5 col-sm-6 my-5 d-flex mx-auto align-items-sm-start justify-content-start row bg-primary p-5">
+          <div
+            class="d-flex flex-column mx-auto align-items-center justify-content-start col-lg-6">
+            <h1 class="">Customer Table 03</h1>
+            <img src="./icons/customer.png" alt="" class="w-75" />
+          </div>
+          <div class="col-lg-6">
+            <img src="./icons/food.png" alt="" class="w-75" />
+            <h2 class="">c-3 Order Complete</h2>
+          </div>
+          <button type="button" class="btn btn-light mt-2">Food Review:<input type="text" class="ms-1"  placeholder="Comments"></button>
+        </div>
+        <!-- customer-04 Order -->
+        <div
+          class="col-lg-5 col-sm-6 my-5 d-flex mx-auto align-items-sm-start justify-content-start row bg-primary p-5">
+          <div class="lft col-lg-6">
+            <img src="./icons/food.png" alt="" class="w-75" />
+            <h2 class="">c-4 Order Complete</h2>
+          </div>
+
+          <div
+            class="d-flex flex-column mx-auto align-items-center justify-content-start col-lg-6">
+            <h1 class="">Customer Table 04</h1>
+            <img src="./icons/customer.png" alt="" class="cs w-75" />
+          </div>
+          <button type="button" class="btn btn-light mt-2">Food Review:<input type="text" class="ms-1"  placeholder="Comments"></button>
+        </div>
+      </div>
+      <!--  Customer Bottom Side End  -->
+      <!-- Footer Start Hear -->
+      <div class="mt-5">
+        <div
+          class="bg-black text-white row justify-content-evenly align-items-center">
+          <!-- Left Side  -->
+          <div class="col-md-7 col-lg-7">
+            <!-- Top  -->
+            <div class="mx-5 py-3">
+              <h3 class="fs-6 my-3">
+                Stay updated with the latest news, stories, and insights from
+                around the globe.
+              </h3>
+              <div class="">
+                <input
+                  type="email"
+                  class="bg-black btn-outline-light rounded-5"
+                  placeholder="Enter your e-mail.." />
+                <button type="button" class="btn btn-warning rounded-5 ms-1">
+                  SUBSCRIBE NOW
+                </button>
+                <hr class="my-4" />
+              </div>
+            </div>
+            <!-- Middle  -->
+            <div class="d-flex">
+              <!-- category-01  -->
+              <div class="mx-5 py-3">
+                <h2 class="fs-6">PAGES</h2>
+                <div class="text-dark-emphasis">
+                  <p class="">About</p>
+                  <p class="">Categories</p>
+                  <p class="">News</p>
+                  <p class="">Authors</p>
+                  <p class="">Podcast</p>
+                  <p class="">Newsletter Plans</p>
+                </div>
+              </div>
+              <!-- category-02  -->
+              <div class="mx-5 py-3">
+                <h2 class="fs-6">CATEGORIES</h2>
+                <div class="text-dark-emphasis">
+                  <p class="">Business</p>
+                  <p class="">Health News</p>
+                  <p class="">World News</p>
+                  <p class="">Sports</p>
+                  <p class="">Culture</p>
+                  <p class="">Technology-3</p>
+                </div>
+              </div>
+              <!-- category-03  -->
+              <div class="mx-5 py-3">
+                <h2 class="fs-6">RESOURCES</h2>
+                <div class="text-dark-emphasis">
+                  <p class="">Contact Us</p>
+                  <p class="">Advertise</p>
+                  <p class="">Changelog</p>
+                </div>
+              </div>
+            </div>
+            <!-- Bottom  -->
+            <div class="d-flex mx-5 py-3 gap-4">
+              <div class="d-flex gap-1">
+                <img src="./icons/food.png" alt="k" class="kwh w-25" />
+                <h5 class="">KIVZO</h5>
+              </div>
+              <div class="d-flex text-dark-emphasis gap-3">
+                <p class="">|</p>
+                <p class="">Privacy Policy</p>
+                <p class="">Terms & Conditions</p>
+                <p class="">License</p>
+              </div>
+            </div>
+          </div>
+          <!-- Right Side  -->
+          <div
+            class="col-md-3 col-lg-4 d-flex flex-column justify-content-between gap-5 me-1 mt-5">
+            <!-- Top  -->
+            <div class="">
+              <!-- Social Media-01  -->
+              <div
+                class="d-flex justify-content-between align-items-center text-dark-emphasis">
+                <p href="#" class="d-flex gap-4 align-items-center">
+                  <i class="fa-brands fa-square-facebook fs-1"></i
+                  ><span class="fs-5">Facebook</span>
+                </p>
+                <i class="bi bi-arrow-right fs-4"></i>
+              </div>
+              <!-- Social Media-02  -->
+              <div
+                class="d-flex justify-content-between align-items-center text-dark-emphasis">
+                <p href="#" class="d-flex gap-4 align-items-center">
+                  <i class="fa-brands fa-square-youtube fs-1"></i
+                  ><span class="fs-5">YouTube</span>
+                </p>
+                <i class="bi bi-arrow-right fs-4"></i>
+              </div>
+              <!-- Social Media-03  -->
+              <div
+                class="d-flex justify-content-between align-items-center text-dark-emphasis">
+                <p href="#" class="d-flex gap-4 align-items-center">
+                  <i class="fa-brands fa-square-instagram fs-1"></i
+                  ><span class="fs-5">Instagram</span>
+                </p>
+                <i class="bi bi-arrow-right fs-4"></i>
+              </div>
+              <!-- Social Media-04  -->
+              <div
+                class="d-flex justify-content-between align-items-center text-dark-emphasis">
+                <p href="#" class="d-flex gap-4 align-items-center">
+                  <i class="fa-brands fa-square-twitter fs-1"></i
+                  ><span class="fs-5">Twitter</span>
+                </p>
+                <i class="bi bi-arrow-right fs-4"></i>
+              </div>
+              <!-- Social Media-05  -->
+              <div
+                class="d-flex justify-content-between align-items-center text-dark-emphasis">
+                <p href="#" class="d-flex gap-4 align-items-center">
+                  <i class="fa-brands fa-square-reddit fs-1"></i
+                  ><span class="fs-5">Reddit</span>
+                </p>
+                <i class="bi bi-arrow-right fs-4"></i>
+              </div>
+              <!-- Social Media-06  -->
+              <div
+                class="d-flex justify-content-between align-items-center text-dark-emphasis">
+                <p href="#" class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-square-rss fs-1"></i
+                  ><span class="fs-5">RSS.com</span>
+                </p>
+                <i class="bi bi-arrow-right fs-4"></i>
+              </div>
+            </div>
+            <!-- Bottom  -->
+            <p class="text-dark-emphasis fs-6">
+              @ 2025 Kivzo. Designed by Nixar.Powered by write
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End Hear -->
+    </div>
+  </body>
+</html>

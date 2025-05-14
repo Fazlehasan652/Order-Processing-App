@@ -1,0 +1,21 @@
+.ws{
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    border: 1px solid purple;
+}
+
+.bg{
+    background-image: url(./icons/pexels-pixabay-531880.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.fsx{
+    font-size: 80px;
+}
+.cs{
+     transform: rotate(180deg); /* Equal to rotateZ(45deg) */
+     transform: scaleX(-1);
+  
+}
